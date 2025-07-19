@@ -1,0 +1,64 @@
+print("perform the list operation")
+l=[]
+while True:
+    c=int(input('''
+    1.append
+    2.extend 
+    3.inserst
+    4.remove
+    5.pop
+    6.split
+    7.sort
+    8.reverse
+    9.clear
+    10.count 
+    11.max
+    12.min
+    13.exit
+    14.display the list
+    enter the value as above indicate:
+    '''))
+    if c==1:
+        a=int(input("enter the append value:"))
+        l.append(a)
+        print("append list:",l)
+    elif c==2:
+        li=[10,34,45,34,64]
+        l.extend(li)
+        print("extend list:",l)
+    elif c==3:
+        i=int(input("enter the insert value:"))
+        l.insert(0,i)
+        print("insert list:",l)
+    elif c==4:
+        r=int(input("enter the remove element:"))
+        l.remove(r)
+        print("remove list:",l)
+    elif c==5:
+        print("pop element:",l.pop())
+        print("pop list:",l)
+    elif c==7:
+        l.sort()
+        print("sort list:",l )
+    elif c==8:
+        l.reverse()
+        print("reverse list:",l)
+    elif c==9:
+        l.clear()
+        print("clear the list:",l)
+    elif c==10:
+        e=int(input("enter the value for repeating how much time:"))
+        print("count:",l.count(e))
+    elif c==11:
+        h=max(l)
+        print("maximum value:",h)
+    elif c==12:
+        g=min(l)
+        print("minimum value:",g)
+    elif c==6:
+        str=input("enter the any string:")
+        print("the split list is:",str.split())
+    elif c==14:
+        print("list:",l)
+    elif c==13:
+        break
