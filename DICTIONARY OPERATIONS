@@ -1,0 +1,43 @@
+d={"name":"piyush awal","age":21,"branch":"information technology"}
+while True:
+    c=int(input('''
+    1.get
+    2.keys 
+    3.values
+    4.items
+    5.delete
+    6.pop
+    7.update
+    8.clear
+    9.display
+    10.exit
+    enter the value as above indicate 
+    '''))
+    if c==9:
+        print(d)
+    elif c==1:
+        print("get:",d.get("name"))
+    elif c==2:
+        for a in d.keys():
+            print("keys:",a)
+    elif c==3:
+        for b in d.values():
+            print("values:",b)
+    elif c==4:
+        for m,n in d.items():
+            print("keys and values:",m,n)
+    elif c==6:
+        d.pop("name")
+        print("delete key:",d)
+    elif c==7:
+        u={"name":"hello awal","age":22,"course":"b-tech"}
+        d.update(u)
+        print("update",d)
+    elif c==8:
+        d.clear()
+        print("clear",d)
+    elif c==5:
+        del d["age"]
+        print("delete:",d)
+    elif c==10:
+        break
