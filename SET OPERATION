@@ -1,0 +1,41 @@
+print("set operation")
+s={10,20,30,40,50}
+while True:
+    c=int(input('''
+    1.set
+    2.add
+    3.pop
+    4.display the set
+    5.remove
+    6.discard1
+    7.clear
+    8.exit
+    enter the value as above show:
+    '''))
+    if c==1:
+        m=input("enter the value:")
+        print("set",set(m))
+    elif c==2:
+        n=int(input("enter the value:"))
+        s.add(n)
+        print("add se:",s)
+    elif c==3:
+        print("pop element:",s.pop())
+        print("pop set",s)
+    elif c==6:
+        n=int(input("enter the discard value:"))
+        s.discard(n)
+        print("discard the set:",s)
+    elif c==7:
+        s.clear()
+        print("clear the set:",s)
+    elif c==5:
+        x=int(input("enter the remove element:"))
+        s.remove(x)
+        print("remove element:",s)
+    elif c==4:
+        print("the set is:",s)
+    elif c==8:
+        break
+    else:
+        print("false condition:")
