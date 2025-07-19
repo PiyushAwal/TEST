@@ -1,0 +1,29 @@
+print("tuple operation")
+t=(10,20,50,40,30,80,90,10,20,50)
+while True:
+    c=int(input('''
+    0.display the tuple
+    1.maximum value
+    2.minimum value
+    3.sum
+    4.count
+    5.exit
+    enter the value:
+    '''))
+    if c==1:
+        m=max(t)
+        print("maximum value:",m)
+    elif c==2:
+        n=min(t)
+        print("minimum value:",n)
+    elif c==3:
+        s=sum(t)
+        print("the sum of the element is:",s)
+    elif c==4:
+        m=int(input("enter the count value:"))
+        c=t.count(m)
+        print("count",c)
+    elif c==0:
+        print("tuple",t)
+    elif c==5:
+        break
