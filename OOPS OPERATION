@@ -1,0 +1,51 @@
+while True:
+    c=int(input('''
+    1.single inheritance
+    2.multilevel inheritance
+    3.multiple inheritance
+    4.exit
+    enter the value as above indicate:
+    '''))
+    if c==1:
+        print("single inheritance:")
+        class A:
+            def a(self):
+                print("class a")
+        class B(A):
+            def b(self):
+                print("class b")
+        obj=B()
+        obj.a()
+        obj.b()
+    elif c==2:
+        print("multilevel inheritance")
+        class A:
+            def a(self):
+                print("class a")
+        class B(A):
+            def b(self):
+                print("class b")
+        class C(B):
+            def c(self):
+                print("class c")
+        obj=C()
+        obj.a()
+        obj.b()
+        obj.c()
+    elif c==3:
+        print("multiple inheritance")
+        class A:
+            def a(self):
+                print("class a")
+        class B:
+            def b(self):
+                print("class b")
+        class C(A,B):
+            def c(self):
+                print("class c")
+        obj=C()
+        obj.a()
+        obj.b()
+        obj.c()
+    elif c==4:
+        break
